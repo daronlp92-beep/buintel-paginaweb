@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* PANTONE 7546 C — identidad Buintel */
+  --brand-primary: #318c77;
+  --brand-dark: #0e3d31;
+  --brand-light: #52c4a0;
+  --brand-glow: rgba(49, 140, 119, 0.4);
+
+  --bg-base: #020b0a;
+  --bg-surface: #071211;
+  --bg-elevated: #0d1f1d;
+  --bg-card: rgba(13, 31, 29, 0.8);
+
+  --text-primary: #f0faf8;
+  --text-secondary: #9acfc3;
+  --text-muted: #4d8279;
+
+  --border-subtle: rgba(49, 140, 119, 0.15);
+  --border-medium: rgba(49, 140, 119, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brand-dark);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-primary);
+}
+
+/* Selección de texto */
+::selection {
+  background: rgba(49, 140, 119, 0.3);
+  color: #f0faf8;
+}
+
+/* Tipografía base */
+h1, h2, h3 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+/* Glassmorphism base */
+.glass {
+  background: rgba(13, 31, 29, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-subtle);
+}
+
+.glass-strong {
+  background: rgba(13, 31, 29, 0.85);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid var(--border-medium);
+}
+
+/* Gradiente de texto */
+.text-gradient {
+  background: linear-gradient(135deg, #52c4a0 0%, #318c77 50%, #9acfc3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #f0faf8 0%, #9acfc3 50%, #52c4a0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Grid tecnológico de fondo */
+.tech-grid {
+  background-image:
+    linear-gradient(rgba(49, 140, 119, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(49, 140, 119, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Línea brillante decorativa */
+.shine-line {
+  background: linear-gradient(90deg, transparent, rgba(49, 140, 119, 0.6), transparent);
+  height: 1px;
+}
+
+/* Botón primario */
+.btn-primary {
+  background: linear-gradient(135deg, #318c77, #1a5a4b);
+  border: 1px solid rgba(82, 196, 160, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(82, 196, 160, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn-primary:hover::before {
+  opacity: 1;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 40px rgba(49, 140, 119, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Botón outline */
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--border-medium);
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(49, 140, 119, 0.08);
+  border-color: var(--brand-primary);
+}
+
+/* Card estilo premium */
+.card-premium {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  backdrop-filter: blur(20px);
+  transition: all 0.3s ease;
+}
+
+.card-premium:hover {
+  border-color: var(--border-medium);
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(49, 140, 119, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Efecto de partículas / puntos */
+.dot-matrix {
+  background-image: radial-gradient(rgba(49, 140, 119, 0.15) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Animaciones */
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes scanLine {
+  0% { top: -2px; }
+  100% { top: 100%; }
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+
+/* Sección de separadores */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-medium), transparent);
+}
+
+/* Badge de tecnología */
+.tech-badge {
+  background: rgba(49, 140, 119, 0.08);
+  border: 1px solid rgba(49, 140, 119, 0.2);
+  color: #9acfc3;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  transition: all 0.2s;
+}
+
+.tech-badge:hover {
+  background: rgba(49, 140, 119, 0.15);
+  border-color: rgba(49, 140, 119, 0.4);
+  color: #52c4a0;
+}
+
+/* Número grande decorativo */
+.stat-number {
+  font-family: var(--font-display);
+  font-weight: 300;
+  line-height: 1;
+  background: linear-gradient(180deg, #52c4a0 0%, #318c77 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
