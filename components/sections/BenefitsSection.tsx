@@ -116,11 +116,11 @@ export default function BenefitsSection() {
 
         {/* Social proof */}
         <div className="mt-16 glass rounded-2xl p-8 text-center max-w-3xl mx-auto">
-          <p className="font-display text-2xl md:text-3xl text-[var(--text-primary)] font-light mb-3">
-            "Buintel Automations redujo en un{' '}
-            <span className="text-gradient">85% el tiempo</span> que invertíamos en
-            conciliaciones financieras mensuales."
-          </p>
+         <p className="font-display text-2xl md:text-3xl text-[var(--text-primary)] font-light mb-3">
+          &ldquo;Buintel Automations redujo en un{' '}
+          <span className="text-gradient">85% el tiempo</span> que invertíamos en
+          conciliaciones financieras mensuales.&rdquo;
+         </p>
           <p className="text-sm text-[var(--text-muted)]">
             — Director de Operaciones, Empresa Retail México
           </p>
