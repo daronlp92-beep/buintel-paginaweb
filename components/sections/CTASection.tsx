@@ -46,7 +46,7 @@ export function CTASection({
             {ctaText}
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
-          <Button variant="outline" size="lg" href="/about">
+          <Button variant="outline" size="lg" href="/services">
             Conocer más
           </Button>
         </div>

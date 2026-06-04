@@ -179,10 +179,10 @@ export default function CookiesPage() {
             <h2 className="text-2xl font-bold text-white mb-3">¿Tienes dudas sobre las cookies?</h2>
             <p className="text-neutral-400 text-sm mb-5">Contáctanos y te ayudamos.</p>
             <a
-              href="mailto:contacto@buintel.com"
+              href="mailto:atencionaclientes@buintel.com"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-500 to-secondary-500 text-white font-semibold rounded-lg hover:shadow-glow transition-all text-sm"
             >
-              contacto@buintel.com
+              atencionaclientes@buintel.com
             </a>
           </div>
         </div>

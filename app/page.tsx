@@ -3,7 +3,6 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/sections/HeroSection';
 import { ServicesGrid } from '@/components/sections/ServicesGrid';
-import { CaseStudiesGrid } from '@/components/sections/CaseStudiesGrid';
 import { ProcessSteps } from '@/components/sections/ProcessSteps';
 import { BenefitsGrid } from '@/components/sections/BenefitsGrid';
 import { TechnologiesGrid } from '@/components/sections/TechnologiesGrid';
@@ -12,7 +11,6 @@ import { CTASection } from '@/components/sections/CTASection';
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection';
 import {
   services,
-  caseStudies,
   technologies,
   processSteps,
   benefits,
@@ -47,7 +45,6 @@ export default function HomePage() {
         <HeroSection />
         <ServicesGrid services={services} />
         <ProcessSteps steps={processSteps} />
-        <CaseStudiesGrid caseStudies={caseStudies} />
         <BenefitsGrid benefits={benefits} />
         <TechnologiesGrid technologies={technologies} />
         <FAQSection items={faqItems} />

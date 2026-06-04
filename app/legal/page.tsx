@@ -17,7 +17,7 @@ export default function LegalPage() {
       num: '1',
       title: 'Titular del sitio web',
       content:
-        'El titular y responsable del sitio web buintel.com es Buintel Automations. Para cualquier consulta, puedes contactarnos en contacto@buintel.com o en el número de WhatsApp +52 811 976 2538.',
+        'El titular y responsable del sitio web buintel.com es Buintel Automations. Para cualquier consulta, puedes contactarnos en atencionaclientes@buintel.com o en el número de WhatsApp +52 811 976 2538.',
     },
     {
       num: '2',
@@ -104,10 +104,10 @@ export default function LegalPage() {
               Contáctanos directamente y te responderemos a la brevedad.
             </p>
             <a
-              href="mailto:contacto@buintel.com"
+              href="mailto:atencionaclientes@buintel.com"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-500 to-secondary-500 text-white font-semibold rounded-lg hover:shadow-glow transition-all text-sm"
             >
-              contacto@buintel.com
+              atencionaclientes@buintel.com
             </a>
           </div>
         </div>

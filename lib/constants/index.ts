@@ -43,8 +43,7 @@ export const COMPANY_INFO = {
   description:
     'Transformamos operaciones manuales en procesos inteligentes mediante Automatización e Inteligencia Artificial.',
   tagline: 'Automatización Empresarial + Inteligencia Artificial',
-  email: 'contacto@buintel.com',
-  emailAtención: 'atencionaclientes@buintel.com',
+  email: 'atencionaclientes@buintel.com',
   phone: '+52 811 976 2538',
   whatsapp: '528119762538',
   address: 'Monterrey, Nuevo León, México',
@@ -60,22 +59,18 @@ export const COMPANY_INFO = {
 
 export const NAVIGATION = [
   { label: 'Inicio', href: '/' },
-  { label: 'Quiénes Somos', href: '/about' },
   { label: 'Servicios', href: '/services' },
-  { label: 'Casos de Éxito', href: '/cases' },
   { label: 'Blog', href: '/blog' },
   { label: 'Contacto', href: '/contact' },
 ];
 
 export const FOOTER_LINKS = {
   product: [
-    { label: 'Casos de Éxito', href: '/cases' },
     { label: 'Servicios', href: '/services' },
     { label: 'Tecnologías', href: '#technologies' },
     { label: 'Blog', href: '/blog' },
   ],
   company: [
-    { label: 'Quiénes Somos', href: '/about' },
     { label: 'Contacto', href: '/contact' },
     { label: 'Carreras', href: '#careers' },
     { label: 'Prensa', href: '#press' },

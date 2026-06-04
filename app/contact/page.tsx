@@ -59,10 +59,10 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-1">Email</h3>
                   <a
-                    href="mailto:contacto@buintel.com"
+                    href="mailto:atencionaclientes@buintel.com"
                     className="text-neutral-400 hover:text-primary-400 transition-colors"
                   >
-                    contacto@buintel.com
+                    atencionaclientes@buintel.com
                   </a>
                 </div>
               </div>
