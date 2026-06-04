@@ -1,12 +1,43 @@
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
-import HeroSection from '@/components/sections/HeroSection'
-import AboutSection from '@/components/sections/AboutSection'
-import ServicesSection from '@/components/sections/ServicesSection'
-import UseCasesSection from '@/components/sections/UseCasesSection'
-import TechnologiesSection from '@/components/sections/TechnologiesSection'
-import BenefitsSection from '@/components/sections/BenefitsSection'
-import ContactSection from '@/components/sections/ContactSection'
+import { Metadata } from 'next';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
+import HeroSection from '@/components/sections/HeroSection';
+import { ServicesGrid } from '@/components/sections/ServicesGrid';
+import { CaseStudiesGrid } from '@/components/sections/CaseStudiesGrid';
+import { ProcessSteps } from '@/components/sections/ProcessSteps';
+import { BenefitsGrid } from '@/components/sections/BenefitsGrid';
+import { TechnologiesGrid } from '@/components/sections/TechnologiesGrid';
+import { FAQSection } from '@/components/sections/FAQSection';
+import { CTASection } from '@/components/sections/CTASection';
+import { TestimonialsSection } from '@/components/sections/TestimonialsSection';
+import {
+  services,
+  caseStudies,
+  technologies,
+  processSteps,
+  benefits,
+  faqItems,
+} from '@/lib/data';
+
+export const metadata: Metadata = {
+  title: 'BUINTEL - Automatización Empresarial e Inteligencia Artificial',
+  description:
+    'Transformamos operaciones manuales en procesos inteligentes mediante automatización e IA. Soluciones empresariales con más de 12 años de experiencia.',
+  keywords: [
+    'automatización de procesos',
+    'inteligencia artificial',
+    'automatización empresarial',
+    'transformación digital',
+    'n8n',
+    'OpenAI',
+    'México',
+  ],
+  openGraph: {
+    title: 'BUINTEL - Automatización Empresarial e IA',
+    description: 'Transformamos operaciones manuales en procesos inteligentes',
+    type: 'website',
+  },
+};
 
 export default function HomePage() {
   return (
@@ -14,14 +45,16 @@ export default function HomePage() {
       <Navbar />
       <main id="main-content">
         <HeroSection />
-        <AboutSection />
-        <ServicesSection />
-        <UseCasesSection />
-        <TechnologiesSection />
-        <BenefitsSection />
-        <ContactSection />
+        <ServicesGrid services={services} />
+        <ProcessSteps steps={processSteps} />
+        <CaseStudiesGrid caseStudies={caseStudies} />
+        <BenefitsGrid benefits={benefits} />
+        <TechnologiesGrid technologies={technologies} />
+        <FAQSection items={faqItems} />
+        <TestimonialsSection />
+        <CTASection />
       </main>
       <Footer />
     </>
-  )
+  );
 }

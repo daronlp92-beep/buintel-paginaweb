@@ -4,9 +4,6 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [],
   },
-  experimental: {
-    optimizeCss: true,
-  },
 }
 
 export default nextConfig
