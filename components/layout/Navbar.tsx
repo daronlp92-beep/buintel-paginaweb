@@ -35,7 +35,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="group" aria-label="BUINTEL Automations — Inicio">
           <Image
-            src="/buintel_logo_blanco.png"
+            src="/buintel_logo_principal.png"
             alt="BUINTEL Automations"
             width={120}
             height={120}

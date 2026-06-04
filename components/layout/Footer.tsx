@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="mb-5">
               <Image
-                src="/buintel_logo_blanco.png"
+                src="/buintel_logo_principal.png"
                 alt="BUINTEL Automations"
                 width={200}
                 height={200}
