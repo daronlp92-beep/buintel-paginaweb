@@ -1,66 +1,39 @@
 <svg width="680" height="400" viewBox="0 0 680 400" role="img" xmlns="http://www.w3.org/2000/svg">
   <title>Logo Buintel Automations</title>
-  <desc>Logo minimalista con engranaje y circuito, fondo oscuro, azul cian limpio</desc>
+  <desc>Logo minimalista digital, azul cian sobre fondo oscuro</desc>
 
-  <defs>
-    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#00C8F0"/>
-      <stop offset="100%" style="stop-color:#0084C8"/>
-    </linearGradient>
-    <filter id="soft">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
-
-  <!-- Fondo oscuro limpio -->
   <rect width="680" height="400" fill="#0A1628" rx="14"/>
+  <circle cx="200" cy="195" r="95" fill="#00C8F0" fill-opacity="0.04"/>
 
-  <!-- Halo sutil detrás del ícono -->
-  <circle cx="240" cy="190" r="90" fill="#00C8F0" fill-opacity="0.05"/>
-
-  <!-- === ENGRANAJE MINIMALISTA === -->
-  <g transform="translate(240,190)">
-    <!-- 8 dientes simples -->
-    <g fill="#00C8F0">
-      <rect x="-7" y="-72" width="14" height="18" rx="2"/>
-      <rect x="-7" y="-72" width="14" height="18" rx="2" transform="rotate(45)"/>
-      <rect x="-7" y="-72" width="14" height="18" rx="2" transform="rotate(90)"/>
-      <rect x="-7" y="-72" width="14" height="18" rx="2" transform="rotate(135)"/>
-      <rect x="-7" y="-72" width="14" height="18" rx="2" transform="rotate(180)"/>
-      <rect x="-7" y="-72" width="14" height="18" rx="2" transform="rotate(225)"/>
-      <rect x="-7" y="-72" width="14" height="18" rx="2" transform="rotate(270)"/>
-      <rect x="-7" y="-72" width="14" height="18" rx="2" transform="rotate(315)"/>
-    </g>
-    <!-- Aro exterior -->
-    <circle r="62" fill="none" stroke="#00C8F0" stroke-width="10"/>
-    <!-- Relleno interior oscuro -->
-    <circle r="50" fill="#0A1628"/>
-    <!-- Cruz interior simple (circuito) -->
-    <line x1="-30" y1="0" x2="30" y2="0" stroke="#00C8F0" stroke-width="2" stroke-linecap="round" stroke-opacity="0.7"/>
-    <line x1="0" y1="-30" x2="0" y2="30" stroke="#00C8F0" stroke-width="2" stroke-linecap="round" stroke-opacity="0.7"/>
-    <!-- 4 nodos en la cruz -->
-    <circle cx="30" cy="0" r="4" fill="#00C8F0"/>
-    <circle cx="-30" cy="0" r="4" fill="#00C8F0"/>
-    <circle cx="0" cy="30" r="4" fill="#00C8F0"/>
-    <circle cx="0" cy="-30" r="4" fill="#00C8F0"/>
-    <!-- Centro -->
-    <circle r="8" fill="#00C8F0"/>
-    <circle r="4" fill="#0A1628"/>
+  <g transform="translate(200,195)">
+    <circle r="75" fill="none" stroke="#00C8F0" stroke-width="1.5" stroke-opacity="0.15"/>
+    <circle r="75" fill="none" stroke="#00C8F0" stroke-width="2"
+            stroke-dasharray="18 8 6 8 30 8 6 8 18 8 50 8"
+            stroke-linecap="round" stroke-opacity="0.8"/>
+    <circle r="60" fill="none" stroke="#00C8F0" stroke-width="2.5"/>
+    <circle r="57" fill="#0A1628"/>
+    <line x1="-32" y1="-18" x2="-14" y2="-18" stroke="#00C8F0" stroke-width="2" stroke-linecap="round" stroke-opacity="0.9"/>
+    <line x1="-8"  y1="-18" x2="10"  y2="-18" stroke="#00C8F0" stroke-width="2" stroke-linecap="round" stroke-opacity="0.6"/>
+    <line x1="16"  y1="-18" x2="32"  y2="-18" stroke="#00C8F0" stroke-width="2" stroke-linecap="round" stroke-opacity="0.35"/>
+    <line x1="-32" y1="0"   x2="-4"  y2="0"   stroke="#00C8F0" stroke-width="2" stroke-linecap="round" stroke-opacity="0.5"/>
+    <line x1="2"   y1="0"   x2="32"  y2="0"   stroke="#00C8F0" stroke-width="2.5" stroke-linecap="round" stroke-opacity="1"/>
+    <line x1="-32" y1="18"  x2="0"   y2="18"  stroke="#00C8F0" stroke-width="2" stroke-linecap="round" stroke-opacity="0.35"/>
+    <line x1="6"   y1="18"  x2="18"  y2="18"  stroke="#00C8F0" stroke-width="2" stroke-linecap="round" stroke-opacity="0.7"/>
+    <line x1="24"  y1="18"  x2="32"  y2="18"  stroke="#00C8F0" stroke-width="2" stroke-linecap="round" stroke-opacity="0.4"/>
+    <circle r="5" fill="#00C8F0"/>
+    <circle r="2.5" fill="#0A1628"/>
+    <circle cx="60"  cy="0"  r="4" fill="#0A1628" stroke="#00C8F0" stroke-width="2"/>
+    <circle cx="-60" cy="0"  r="4" fill="#0A1628" stroke="#00C8F0" stroke-width="2"/>
+    <circle cx="0"  cy="-60" r="4" fill="#00C8F0"/>
+    <circle cx="0"  cy="60"  r="3" fill="#00C8F0" fill-opacity="0.4"/>
+    <line x1="0" y1="-60" x2="0" y2="-75" stroke="#00C8F0" stroke-width="1.5" stroke-opacity="0.6" stroke-linecap="round"/>
+    <line x1="-8" y1="-68" x2="8" y2="-68" stroke="#00C8F0" stroke-width="1.5" stroke-opacity="0.4" stroke-linecap="round"/>
   </g>
 
-  <!-- Línea horizontal de circuito saliendo del engranaje -->
-  <line x1="303" y1="190" x2="360" y2="190" stroke="#00C8F0" stroke-width="1.5" stroke-opacity="0.4" stroke-linecap="round"/>
-  <circle cx="360" cy="190" r="3" fill="#00C8F0" fill-opacity="0.3"/>
-
-  <!-- Línea izquierda -->
-  <line x1="177" y1="190" x2="138" y2="190" stroke="#00C8F0" stroke-width="1.5" stroke-opacity="0.25" stroke-linecap="round"/>
-
-  <!-- === TEXTO === -->
-  <text x="380" y="178" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
-        font-size="42" font-weight="700" letter-spacing="2" fill="white">BUINTEL</text>
-  <line x1="380" y1="193" x2="620" y2="193" stroke="#00C8F0" stroke-width="1" stroke-opacity="0.35"/>
-  <text x="381" y="215" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
-        font-size="15" font-weight="300" letter-spacing="7" fill="#00C8F0">AUTOMATIONS</text>
-
+  <line x1="261" y1="195" x2="306" y2="195" stroke="#00C8F0" stroke-width="1.5" stroke-opacity="0.3" stroke-linecap="round" stroke-dasharray="4 3"/>
+  <text x="322" y="182" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="44" font-weight="700" letter-spacing="2" fill="white">BUINTEL</text>
+  <line x1="322" y1="197" x2="594" y2="197" stroke="#00C8F0" stroke-width="0.8" stroke-opacity="0.35"/>
+  <text x="323" y="219" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="14.5" font-weight="300" letter-spacing="8" fill="#00C8F0">AUTOMATIONS</text>
 </svg>

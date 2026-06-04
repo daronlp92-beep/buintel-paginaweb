@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { Technology } from '@/lib/types';
 
 interface TechnologyCardProps {
@@ -18,16 +18,16 @@ export function TechnologyCard({ technology, index }: TechnologyCardProps) {
       viewport={{ once: true }}
       className="group flex flex-col items-center justify-center p-4 rounded-xl border border-neutral-800 bg-neutral-900/50 hover:bg-neutral-900 hover:border-primary-500/40 transition-all duration-300 hover:shadow-glow cursor-pointer aspect-square"
     >
-      {/* Logo real o emoji fallback */}
+      {/* Logo */}
       <div className="mb-2 group-hover:scale-110 transition-transform flex items-center justify-center h-9">
         {technology.logoUrl ? (
-          <Image
+          <img
             src={technology.logoUrl}
             alt={technology.name}
             width={36}
             height={36}
-            unoptimized
-            className="object-contain"
+            loading="lazy"
+            className="object-contain w-9 h-9"
           />
         ) : (
           <span className="text-3xl">{technology.icon}</span>
