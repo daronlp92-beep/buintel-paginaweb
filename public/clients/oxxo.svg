@@ -1,0 +1,36 @@
+<svg width="560" height="283" viewBox="0 0 560 283" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>OXXO</title>
+  <defs>
+    <clipPath id="oxxoClip">
+      <rect width="560" height="283" rx="30"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#oxxoClip)">
+    <!-- Fondo amarillo/ámbar -->
+    <rect width="560" height="283" fill="#FFAA00"/>
+
+    <!-- Franja blanca superior -->
+    <rect y="40" width="560" height="26" fill="white"/>
+
+    <!-- Banda roja central -->
+    <rect y="66" width="560" height="151" fill="#E31B23"/>
+
+    <!-- Franja blanca inferior -->
+    <rect y="217" width="560" height="26" fill="white"/>
+
+    <!-- O izquierda (donut blanco) -->
+    <circle cx="103" cy="141" r="62" fill="none" stroke="white" stroke-width="30"/>
+
+    <!-- X izquierda — dos diagonales -->
+    <line x1="187" y1="78" x2="252" y2="204" stroke="white" stroke-width="40" stroke-linecap="round"/>
+    <line x1="252" y1="78" x2="187" y2="204" stroke="white" stroke-width="40" stroke-linecap="round"/>
+
+    <!-- X derecha — dos diagonales -->
+    <line x1="308" y1="78" x2="373" y2="204" stroke="white" stroke-width="40" stroke-linecap="round"/>
+    <line x1="373" y1="78" x2="308" y2="204" stroke="white" stroke-width="40" stroke-linecap="round"/>
+
+    <!-- O derecha (donut blanco) -->
+    <circle cx="457" cy="141" r="62" fill="none" stroke="white" stroke-width="30"/>
+  </g>
+</svg>
