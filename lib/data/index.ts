@@ -198,21 +198,21 @@ export const caseStudies: CaseStudy[] = [
 const SI = 'https://cdn.simpleicons.org'
 
 export const technologies: Technology[] = [
-  { id: 'openai',       name: 'OpenAI',          icon: '🤖', logoUrl: `${SI}/openai/00C8F0`,           category: 'IA' },
+  { id: 'openai',       name: 'OpenAI',          icon: '🤖', logoUrl: '/tech/openai.svg',              category: 'IA' },
   { id: 'n8n',          name: 'n8n',              icon: '⚙️', logoUrl: `${SI}/n8n`,                     category: 'Automatización' },
   { id: 'python',       name: 'Python',           icon: '🐍', logoUrl: `${SI}/python`,                  category: 'Backend' },
   { id: 'postgresql',   name: 'PostgreSQL',       icon: '🗄️', logoUrl: `${SI}/postgresql`,              category: 'Base de Datos' },
-  { id: 'azure',        name: 'Azure',            icon: '☁️', logoUrl: `${SI}/microsoftazure/0078D4`,   category: 'Cloud' },
-  { id: 'teams',        name: 'Microsoft Teams',  icon: '💬', logoUrl: `${SI}/microsoftteams/6264A7`,   category: 'Integración' },
-  { id: 'powerbi',      name: 'Power BI',         icon: '📊', logoUrl: `${SI}/powerbi/F2C811`,          category: 'Analytics' },
-  { id: 'tableau',      name: 'Tableau',          icon: '📈', logoUrl: `${SI}/tableau/E97627`,          category: 'Analytics' },
+  { id: 'azure',        name: 'Azure',            icon: '☁️', logoUrl: '/tech/azure.svg',               category: 'Cloud' },
+  { id: 'teams',        name: 'Microsoft Teams',  icon: '💬', logoUrl: '/tech/teams.svg',               category: 'Integración' },
+  { id: 'powerbi',      name: 'Power BI',         icon: '📊', logoUrl: '/tech/powerbi.svg',             category: 'Analytics' },
+  { id: 'tableau',      name: 'Tableau',          icon: '📈', logoUrl: '/tech/tableau.svg',             category: 'Analytics' },
   { id: 'shopify',      name: 'Shopify',          icon: '🛍️', logoUrl: `${SI}/shopify`,                 category: 'E-commerce' },
-  { id: 'sqlserver',    name: 'SQL Server',       icon: '💾', logoUrl: `${SI}/microsoftsqlserver/CC2927`, category: 'Base de Datos' },
+  { id: 'sqlserver',    name: 'SQL Server',       icon: '💾', logoUrl: `${SI}/microsoftsqlserver`,      category: 'Base de Datos' },
   { id: 'github',       name: 'GitHub',           icon: '🐙', logoUrl: `${SI}/github/ffffff`,           category: 'DevOps' },
-  { id: 'docker',       name: 'Docker',           icon: '🐳', logoUrl: `${SI}/docker/2496ED`,           category: 'DevOps' },
-  { id: 'restapi',      name: 'APIs REST',         icon: '🔌', logoUrl: `${SI}/openapi/6BA539`,          category: 'Integración' },
-  { id: 'microsoft365', name: 'Microsoft 365',    icon: '📱', logoUrl: `${SI}/microsoft/ffffff`,        category: 'Integración' },
-  { id: 'whatsapp',     name: 'WhatsApp',         icon: '💬', logoUrl: `${SI}/whatsapp/25D366`,         category: 'Integración' },
+  { id: 'docker',       name: 'Docker',           icon: '🐳', logoUrl: `${SI}/docker`,                  category: 'DevOps' },
+  { id: 'restapi',      name: 'APIs REST',         icon: '🔌', logoUrl: '/tech/restapi.svg',             category: 'Integración' },
+  { id: 'microsoft365', name: 'Microsoft 365',    icon: '📱', logoUrl: '/tech/microsoft365.svg',        category: 'Integración' },
+  { id: 'whatsapp',     name: 'WhatsApp',         icon: '💬', logoUrl: `${SI}/whatsapp`,                category: 'Integración' },
 ];
 
 export const processSteps: ProcessStep[] = [
