@@ -15,12 +15,12 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="mb-5">
               <Image
-                src="/buintel_logo_horizontal_dark.svg"
+                src="/buintel_logo.svg"
                 alt="BUINTEL Automations"
-                width={240}
-                height={57}
+                width={272}
+                height={160}
                 unoptimized
-                className="h-14 w-auto"
+                className="h-20 w-auto rounded-xl"
               />
             </div>
             <p className="text-neutral-400 text-sm leading-relaxed max-w-sm mb-6">

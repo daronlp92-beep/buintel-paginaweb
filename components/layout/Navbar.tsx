@@ -34,19 +34,19 @@ export default function Navbar() {
       >
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group" aria-label="BUINTEL Automations — Inicio">
-          {/* Isotipo */}
+          {/* Ícono engranaje */}
           <Image
-            src="/buintel_isotipo_transparent.svg"
+            src="/buintel_icon.svg"
             alt="BUINTEL Automations"
-            width={44}
-            height={44}
+            width={42}
+            height={42}
             unoptimized
-            className="group-hover:drop-shadow-[0_0_10px_rgba(0,174,239,0.5)] transition-all duration-300"
+            className="group-hover:drop-shadow-[0_0_12px_rgba(0,200,240,0.6)] transition-all duration-300"
           />
-          {/* Wordmark — oculto en mobile muy pequeño */}
-          <span className="hidden sm:inline font-bold text-white text-lg tracking-tight leading-none">
+          {/* Wordmark */}
+          <span className="hidden sm:inline font-bold text-white text-lg tracking-[0.08em] leading-none uppercase">
             BUINTEL
-            <span className="block text-[10px] font-light tracking-[0.35em] text-[#00AEEF] uppercase">
+            <span className="block text-[9px] font-light tracking-[0.42em] text-[#00C8F0] uppercase mt-0.5">
               Automations
             </span>
           </span>
