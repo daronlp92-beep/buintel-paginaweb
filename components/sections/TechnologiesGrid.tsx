@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Technology } from '@/lib/types';
 
 interface TechnologyCardProps {
@@ -17,8 +18,21 @@ export function TechnologyCard({ technology, index }: TechnologyCardProps) {
       viewport={{ once: true }}
       className="group flex flex-col items-center justify-center p-4 rounded-xl border border-neutral-800 bg-neutral-900/50 hover:bg-neutral-900 hover:border-primary-500/40 transition-all duration-300 hover:shadow-glow cursor-pointer aspect-square"
     >
-      {/* Icon/Emoji */}
-      <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">{technology.icon}</div>
+      {/* Logo real o emoji fallback */}
+      <div className="mb-2 group-hover:scale-110 transition-transform flex items-center justify-center h-9">
+        {technology.logoUrl ? (
+          <Image
+            src={technology.logoUrl}
+            alt={technology.name}
+            width={36}
+            height={36}
+            unoptimized
+            className="object-contain"
+          />
+        ) : (
+          <span className="text-3xl">{technology.icon}</span>
+        )}
+      </div>
 
       {/* Name */}
       <h3 className="font-semibold text-white text-center text-xs leading-tight">{technology.name}</h3>
