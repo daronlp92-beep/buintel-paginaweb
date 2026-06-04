@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { Highlight } from '@/components/ui/Button'
 
 const expertiseAreas = [
@@ -104,11 +105,12 @@ export default function AboutContent() {
           >
             <div className="absolute inset-0 bg-mesh-primary opacity-30" />
             <div className="text-center z-10">
-              <img
+              <Image
                 src="/buintel_isotipo_transparent.svg"
                 alt="BUINTEL Automations"
                 width={80}
                 height={80}
+                unoptimized
                 className="mx-auto mb-4 opacity-60"
               />
               <p className="text-neutral-400 text-sm">Foto del Fundador</p>

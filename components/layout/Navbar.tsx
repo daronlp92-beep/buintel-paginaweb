@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { NAVIGATION, COMPANY_INFO } from '@/lib/constants'
@@ -34,11 +35,12 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group" aria-label="BUINTEL Automations — Inicio">
           {/* Isotipo */}
-          <img
+          <Image
             src="/buintel_isotipo_transparent.svg"
             alt="BUINTEL Automations"
             width={44}
             height={44}
+            unoptimized
             className="group-hover:drop-shadow-[0_0_10px_rgba(0,174,239,0.5)] transition-all duration-300"
           />
           {/* Wordmark — oculto en mobile muy pequeño */}

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Linkedin, Twitter, Instagram, Facebook } from 'lucide-react'
 import { COMPANY_INFO, FOOTER_LINKS } from '@/lib/constants'
 
@@ -13,11 +14,12 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="mb-5">
-              <img
+              <Image
                 src="/buintel_logo_horizontal_dark.svg"
                 alt="BUINTEL Automations"
                 width={240}
                 height={57}
+                unoptimized
                 className="h-14 w-auto"
               />
             </div>
