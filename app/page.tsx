@@ -8,7 +8,6 @@ import { BenefitsGrid } from '@/components/sections/BenefitsGrid';
 import { TechnologiesGrid } from '@/components/sections/TechnologiesGrid';
 import { FAQSection } from '@/components/sections/FAQSection';
 import { CTASection } from '@/components/sections/CTASection';
-import { TestimonialsSection } from '@/components/sections/TestimonialsSection';
 import {
   services,
   technologies,
@@ -48,7 +47,6 @@ export default function HomePage() {
         <BenefitsGrid benefits={benefits} />
         <TechnologiesGrid technologies={technologies} />
         <FAQSection items={faqItems} />
-        <TestimonialsSection />
         <CTASection />
       </main>
       <Footer />

@@ -33,7 +33,7 @@
   <line x1="261" y1="195" x2="306" y2="195" stroke="#00C8F0" stroke-width="1.5" stroke-opacity="0.3" stroke-linecap="round" stroke-dasharray="4 3"/>
   <text x="322" y="182" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
         font-size="44" font-weight="700" letter-spacing="2" fill="white">BUINTEL</text>
-  <line x1="322" y1="197" x2="594" y2="197" stroke="#00C8F0" stroke-width="0.8" stroke-opacity="0.35"/>
+  <line x1="322" y1="197" x2="594" y2="197" stroke="white" stroke-width="0.8" stroke-opacity="0.3"/>
   <text x="323" y="219" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
-        font-size="14.5" font-weight="300" letter-spacing="8" fill="#00C8F0">AUTOMATIONS</text>
+        font-size="14.5" font-weight="300" letter-spacing="8" fill="white">AUTOMATIONS</text>
 </svg>
