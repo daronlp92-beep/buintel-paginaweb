@@ -44,8 +44,8 @@ export const COMPANY_INFO = {
     'Transformamos operaciones manuales en procesos inteligentes mediante Automatización e Inteligencia Artificial.',
   tagline: 'Automatización Empresarial + Inteligencia Artificial',
   email: 'atencionaclientes@buintel.com',
-  phone: '+52 811 976 2538',
-  whatsapp: '528119762538',
+  phone: '+52 811 225 9630',
+  whatsapp: '528112259630',
   address: 'Monterrey, Nuevo León, México',
   year_founded: 2024,
   social: {
