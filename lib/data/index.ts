@@ -9,107 +9,81 @@ import {
 
 export const services: Service[] = [
   {
-    id: 'automation-processes',
-    icon: 'Zap',
-    title: 'Automatización de Procesos',
+    id: 'ai-agents',
+    icon: 'Bot',
+    title: 'Agentes de IA',
     description:
-      'Elimina tareas repetitivas y errores manuales automatizando tus procesos operativos críticos.',
+      'Empleados digitales que trabajan 24/7 sin descanso, errores ni vacaciones. Responden, deciden y actúan de forma autónoma.',
     features: [
-      'Identificación de cuellos de botella',
-      'Diseño de flujos optimizados',
-      'Automatización end-to-end',
-      'Monitoreo y alertas',
+      'GPT-4o, Claude y modelos open-source',
+      'Procesamiento de lenguaje natural',
+      'Integración nativa con tus sistemas',
+      'Aprendizaje y mejora continua',
     ],
   },
   {
-    id: 'ai-enterprise',
-    icon: 'Brain',
-    title: 'Inteligencia Artificial Empresarial',
+    id: 'automation',
+    icon: 'Zap',
+    title: 'Automatizaciones Inteligentes',
     description:
-      'Implementa agentes inteligentes que aprenden, toman decisiones y automatizan procesos complejos.',
+      'Elimina el trabajo manual para siempre. Conectamos apps, APIs y bases de datos en flujos que corren solos.',
     features: [
-      'Agentes de IA especializados',
-      'Procesamiento de lenguaje natural',
-      'Integración con LLMs (OpenAI, Claude)',
-      'Automatización inteligente de decisiones',
+      'n8n, Make y Zapier enterprise',
+      'Flujos sin código y con código custom',
+      'Disparadores en tiempo real',
+      'Monitoreo 24/7 con alertas',
+    ],
+  },
+  {
+    id: 'custom-dev',
+    icon: 'Code2',
+    title: 'Desarrollos a Medida',
+    description:
+      'Software que resuelve exactamente TU problema. Sin plantillas genéricas, sin compromisos innecesarios.',
+    features: [
+      'Aplicaciones web y SaaS escalables',
+      'Arquitectura cloud-native',
+      'IA integrada desde el diseño',
+      'Mantenimiento y evolución continua',
     ],
   },
   {
     id: 'systems-integration',
-    icon: 'Link',
+    icon: 'GitMerge',
     title: 'Integración de Sistemas',
     description:
-      'Conecta tus aplicaciones empresariales (ERP, CRM, etc.) en una orquestación única.',
+      'Conecta tu ERP, CRM, e-commerce y todas tus apps en un ecosistema unificado e inteligente.',
     features: [
-      'APIs REST y webhooks',
-      'Sincronización de datos',
-      'ETL automático',
-      'Comunicación en tiempo real',
+      'SAP, Oracle, Salesforce y más',
+      'APIs REST y webhooks en tiempo real',
+      'ETL y sincronización automática',
+      'Sin cambiar tus sistemas actuales',
     ],
   },
   {
-    id: 'dashboards-analytics',
+    id: 'analytics-ai',
     icon: 'BarChart3',
-    title: 'Dashboards y Analítica',
+    title: 'Analítica con IA',
     description:
-      'Visualiza datos críticos en tiempo real con dashboards ejecutivos personalizados.',
+      'Toma decisiones basadas en datos, no en corazonadas. KPIs en tiempo real con predicciones de IA.',
     features: [
-      'Power BI y Tableau',
-      'KPIs en tiempo real',
-      'Reportes automáticos',
-      'Inteligencia de negocio',
+      'Dashboards ejecutivos en vivo',
+      'IA predictiva y forecasting',
+      'Power BI y visualizaciones custom',
+      'Alertas inteligentes automáticas',
     ],
   },
   {
-    id: 'financial-automation',
-    icon: 'DollarSign',
-    title: 'Automatización Financiera',
+    id: 'ai-consulting',
+    icon: 'Lightbulb',
+    title: 'Consultoría Estratégica IA',
     description:
-      'Automatiza conciliaciones, facturación, cobranzas y procesos financieros complejos.',
+      'Tu hoja de ruta hacia la empresa inteligente. Identificamos y priorizamos tus mayores oportunidades de automatización.',
     features: [
-      'Conciliaciones automáticas',
-      'Generación de facturas',
-      'Cobranza inteligente',
-      'Auditoría y compliance',
-    ],
-  },
-  {
-    id: 'supply-chain',
-    icon: 'Truck',
-    title: 'Automatización Supply Chain',
-    description:
-      'Optimiza inventarios, replenishment y logística con automatización integral.',
-    features: [
-      'Gestión de inventarios',
-      'Replenishment automático',
-      'Planogramas masivos',
-      'Trazabilidad completa',
-    ],
-  },
-  {
-    id: 'commercial-automation',
-    icon: 'TrendingUp',
-    title: 'Automatización Comercial',
-    description:
-      'Impulsa ventas automatizando forecast, reportes y procesos comerciales.',
-    features: [
-      'Forecast de ventas',
-      'Proyecciones financieras',
-      'Reportes ejecutivos',
-      'Inteligencia de mercado',
-    ],
-  },
-  {
-    id: 'saas-solutions',
-    icon: 'Code',
-    title: 'Desarrollo SaaS',
-    description:
-      'Creamos soluciones SaaS escalables personalizadas a tu industria.',
-    features: [
-      'Arquitectura en la nube',
-      'Escalabilidad empresarial',
-      'Multi-tenant',
-      'API RESTful avanzada',
+      'Diagnóstico profundo de procesos',
+      'Plan de transformación digital',
+      'Cálculo de ROI proyectado',
+      'Acompañamiento ejecutivo completo',
     ],
   },
 ];

@@ -9,23 +9,23 @@
   --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  /* PANTONE 7546 C — identidad Buintel */
-  --brand-primary: #318c77;
-  --brand-dark: #0e3d31;
-  --brand-light: #52c4a0;
-  --brand-glow: rgba(49, 140, 119, 0.4);
+  --brand-primary: #0066FF;
+  --brand-secondary: #00D9FF;
+  --brand-purple: #7C3AED;
+  --brand-glow: rgba(0, 102, 255, 0.4);
 
-  --bg-base: #020b0a;
-  --bg-surface: #071211;
-  --bg-elevated: #0d1f1d;
-  --bg-card: rgba(13, 31, 29, 0.8);
+  --bg-base: #030712;
+  --bg-surface: #060d1f;
+  --bg-elevated: #0a1628;
+  --bg-card: rgba(6, 13, 31, 0.85);
 
-  --text-primary: #f0faf8;
-  --text-secondary: #9acfc3;
-  --text-muted: #4d8279;
+  --text-primary: #f0f6ff;
+  --text-secondary: #94a3b8;
+  --text-muted: #475569;
 
-  --border-subtle: rgba(49, 140, 119, 0.15);
-  --border-medium: rgba(49, 140, 119, 0.3);
+  --border-subtle: rgba(0, 102, 255, 0.12);
+  --border-medium: rgba(0, 217, 255, 0.25);
+  --border-strong: rgba(0, 217, 255, 0.5);
 }
 
 * {
@@ -46,7 +46,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Scrollbar personalizado */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -54,115 +53,121 @@ body {
   background: var(--bg-base);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--brand-dark);
+  background: rgba(0, 102, 255, 0.3);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--brand-primary);
 }
 
-/* Selección de texto */
 ::selection {
-  background: rgba(49, 140, 119, 0.3);
-  color: #f0faf8;
+  background: rgba(0, 102, 255, 0.3);
+  color: #f0f6ff;
 }
 
-/* Tipografía base */
 body {
   font-family: var(--font-body);
 }
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
-  line-height: 1.15;
-  letter-spacing: -0.025em;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
   font-weight: 700;
 }
 
-/* Glassmorphism base */
+/* ─── CYBER GRID BACKGROUND ─────────────────────────────────────── */
+.cyber-grid {
+  background-image:
+    linear-gradient(rgba(0, 102, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 102, 255, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.cyber-grid-dense {
+  background-image:
+    linear-gradient(rgba(0, 217, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 217, 255, 0.04) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* ─── GLOW ORBS ───────────────────────────────────────────────────── */
+.glow-orb {
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: orbPulse 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes orbPulse {
+  0%, 100% { opacity: 0.25; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.12); }
+}
+
+/* ─── GLASSMORPHISM ─────────────────────────────────────────────── */
 .glass {
-  background: rgba(13, 31, 29, 0.6);
+  background: rgba(6, 13, 31, 0.6);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--border-subtle);
 }
 
 .glass-strong {
-  background: rgba(13, 31, 29, 0.85);
+  background: rgba(6, 13, 31, 0.9);
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
   border: 1px solid var(--border-medium);
 }
 
-/* Gradiente de texto */
-.text-gradient {
-  background: linear-gradient(135deg, #52c4a0 0%, #318c77 50%, #9acfc3 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.text-gradient-gold {
-  background: linear-gradient(135deg, #f0faf8 0%, #9acfc3 50%, #52c4a0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Grid tecnológico de fondo */
-.tech-grid {
-  background-image:
-    linear-gradient(rgba(49, 140, 119, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(49, 140, 119, 0.04) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
-
-/* Línea brillante decorativa */
-.shine-line {
-  background: linear-gradient(90deg, transparent, rgba(49, 140, 119, 0.6), transparent);
-  height: 1px;
-}
-
-/* Botón primario */
-.btn-primary {
-  background: linear-gradient(135deg, #318c77, #1a5a4b);
-  border: 1px solid rgba(82, 196, 160, 0.3);
-  transition: all 0.3s ease;
+/* ─── CYBER CARD ─────────────────────────────────────────────────── */
+.cyber-card {
+  background: rgba(6, 13, 31, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 102, 255, 0.18);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
 }
 
-.btn-primary::before {
+.cyber-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.7), transparent);
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+
+.cyber-card::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(82, 196, 160, 0.1), transparent);
+  background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(0, 102, 255, 0.06), transparent 40%);
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.35s;
 }
 
-.btn-primary:hover::before {
+.cyber-card:hover::before {
   opacity: 1;
 }
 
-.btn-primary:hover {
-  box-shadow: 0 0 40px rgba(49, 140, 119, 0.4);
-  transform: translateY(-1px);
+.cyber-card:hover::after {
+  opacity: 1;
 }
 
-/* Botón outline */
-.btn-outline {
-  background: transparent;
-  border: 1px solid var(--border-medium);
-  transition: all 0.3s ease;
+.cyber-card:hover {
+  border-color: rgba(0, 217, 255, 0.35);
+  box-shadow:
+    0 0 0 1px rgba(0, 217, 255, 0.1),
+    0 8px 48px rgba(0, 0, 0, 0.5),
+    0 0 30px rgba(0, 102, 255, 0.12);
+  transform: translateY(-4px);
 }
 
-.btn-outline:hover {
-  background: rgba(49, 140, 119, 0.08);
-  border-color: var(--brand-primary);
-}
-
-/* Card estilo premium */
+/* Card premium (legacy compat) */
 .card-premium {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
@@ -172,48 +177,104 @@ h1, h2, h3, h4 {
 
 .card-premium:hover {
   border-color: var(--border-medium);
-  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(49, 140, 119, 0.1);
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 102, 255, 0.08);
   transform: translateY(-2px);
 }
 
-/* Efecto de partículas / puntos */
-.dot-matrix {
-  background-image: radial-gradient(rgba(49, 140, 119, 0.15) 1px, transparent 1px);
-  background-size: 30px 30px;
+/* ─── TEXT GRADIENTS ─────────────────────────────────────────────── */
+.text-gradient {
+  background: linear-gradient(135deg, #0066FF 0%, #00D9FF 50%, #7C3AED 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-/* Animaciones */
-@keyframes gradientShift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #00D9FF 0%, #0066FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-@keyframes scanLine {
-  0% { top: -2px; }
-  100% { top: 100%; }
+.text-gradient-gold {
+  background: linear-gradient(135deg, #f0f6ff 0%, #94a3b8 50%, #00D9FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-@keyframes glowPulse {
-  0%, 100% { opacity: 0.5; }
-  50% { opacity: 1; }
+/* Animated holographic gradient for headlines */
+.gradient-border {
+  background: linear-gradient(90deg, #0066FF, #00D9FF, #7C3AED, #0066FF);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: holographicShift 5s linear infinite;
 }
 
-.animate-gradient {
-  background-size: 200% 200%;
-  animation: gradientShift 8s ease infinite;
+@keyframes holographicShift {
+  0% { background-position: 0% center; }
+  100% { background-position: 300% center; }
 }
 
-/* Sección de separadores */
-.section-divider {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--border-medium), transparent);
+/* ─── NEON BORDERS ───────────────────────────────────────────────── */
+.neon-border {
+  border: 1px solid rgba(0, 102, 255, 0.3);
+  box-shadow: 0 0 0 1px transparent;
+  transition: all 0.3s;
 }
 
-/* Badge de tecnología */
+.neon-border:hover {
+  border-color: rgba(0, 217, 255, 0.6);
+  box-shadow: 0 0 20px rgba(0, 102, 255, 0.2), inset 0 0 20px rgba(0, 102, 255, 0.04);
+}
+
+/* ─── BUTTONS ────────────────────────────────────────────────────── */
+.btn-primary {
+  background: linear-gradient(135deg, #0066FF, #0052cc);
+  border: 1px solid rgba(0, 217, 255, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn-primary:hover::before {
+  opacity: 1;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 40px rgba(0, 102, 255, 0.5), 0 0 80px rgba(0, 102, 255, 0.15);
+  transform: translateY(-2px);
+  border-color: rgba(0, 217, 255, 0.6);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(0, 102, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(0, 102, 255, 0.08);
+  border-color: rgba(0, 217, 255, 0.5);
+  box-shadow: 0 0 20px rgba(0, 102, 255, 0.1);
+}
+
+/* ─── TECH BADGES ────────────────────────────────────────────────── */
 .tech-badge {
-  background: rgba(49, 140, 119, 0.08);
-  border: 1px solid rgba(49, 140, 119, 0.2);
-  color: #9acfc3;
+  background: rgba(0, 102, 255, 0.08);
+  border: 1px solid rgba(0, 102, 255, 0.2);
+  color: #94b4d4;
   font-family: var(--font-mono);
   font-size: 0.75rem;
   letter-spacing: 0.05em;
@@ -221,18 +282,83 @@ h1, h2, h3, h4 {
 }
 
 .tech-badge:hover {
-  background: rgba(49, 140, 119, 0.15);
-  border-color: rgba(49, 140, 119, 0.4);
-  color: #52c4a0;
+  background: rgba(0, 217, 255, 0.1);
+  border-color: rgba(0, 217, 255, 0.4);
+  color: #00D9FF;
 }
 
-/* Número grande decorativo */
+/* ─── ANIMATIONS ─────────────────────────────────────────────────── */
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes scanLine {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+@keyframes ping-slow {
+  0% { transform: scale(1); opacity: 0.8; }
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+/* ─── SECTION UTILITIES ──────────────────────────────────────────── */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 102, 255, 0.3), transparent);
+}
+
+.tech-grid {
+  background-image:
+    linear-gradient(rgba(0, 102, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 102, 255, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.dot-matrix {
+  background-image: radial-gradient(rgba(0, 102, 255, 0.15) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.shine-line {
+  background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.6), transparent);
+  height: 1px;
+}
+
+/* ─── STAT NUMBERS ───────────────────────────────────────────────── */
 .stat-number {
   font-family: var(--font-display);
   font-weight: 300;
   line-height: 1;
-  background: linear-gradient(180deg, #52c4a0 0%, #318c77 100%);
+  background: linear-gradient(180deg, #00D9FF 0%, #0066FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* ─── ICON GLOW ──────────────────────────────────────────────────── */
+.icon-glow {
+  filter: drop-shadow(0 0 8px rgba(0, 217, 255, 0.6));
+}
+
+/* ─── MESH PRIMARY (legacy compat) ──────────────────────────────── */
+.bg-mesh-primary {
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(0, 102, 255, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(0, 217, 255, 0.2) 0%, transparent 60%);
 }

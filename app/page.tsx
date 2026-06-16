@@ -17,22 +17,32 @@ import {
 } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'BUINTEL - Automatización Empresarial e Inteligencia Artificial',
+  title: 'BUINTEL | Agencia de Inteligencia Artificial y Automatización en México',
   description:
-    'Transformamos operaciones manuales en procesos inteligentes mediante automatización e IA. Soluciones empresariales con más de 12 años de experiencia.',
+    'Agencia de IA en Monterrey: agentes inteligentes, automatizaciones a medida, desarrollos SaaS e integración de sistemas. Más de 12 años de experiencia, ROI en 30-90 días.',
   keywords: [
-    'automatización de procesos',
-    'inteligencia artificial',
-    'automatización empresarial',
-    'transformación digital',
-    'n8n',
-    'OpenAI',
-    'México',
+    'agencia inteligencia artificial México',
+    'automatización de procesos empresariales',
+    'agentes de IA empresariales',
+    'automatización con n8n',
+    'desarrollo software a medida',
+    'transformación digital Monterrey',
+    'consultoría IA México',
+    'integración ERP CRM',
+    'dashboards analítica empresarial',
+    'automatización RPA',
+    'OpenAI GPT empresas',
+    'ahorro costos operativos',
   ],
   openGraph: {
-    title: 'BUINTEL - Automatización Empresarial e IA',
-    description: 'Transformamos operaciones manuales en procesos inteligentes',
+    title: 'BUINTEL | Agencia de IA y Automatización · Monterrey, México',
+    description:
+      'Agentes de IA, automatizaciones inteligentes y desarrollos a medida para empresas que quieren escalar sin aumentar su equipo. 100+ proyectos entregados.',
     type: 'website',
+    locale: 'es_MX',
+  },
+  alternates: {
+    canonical: 'https://buintel.com',
   },
 };
 
