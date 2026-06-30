@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     'ahorro costos operativos',
   ],
   openGraph: {
-    title: 'Buintel | Agencia de IA y Automatización · Monterrey, México',
+    title: 'Buintel',
     description:
       'Agentes de IA, automatizaciones inteligentes y desarrollos a medida para empresas que quieren escalar sin aumentar su equipo. 100+ proyectos entregados.',
     type: 'website',
