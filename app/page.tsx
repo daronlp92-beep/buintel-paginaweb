@@ -17,7 +17,7 @@ import {
 } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'BUINTEL | Agencia de Inteligencia Artificial y Automatización en México',
+  title: 'Buintel',
   description:
     'Agencia de IA en Monterrey: agentes inteligentes, automatizaciones a medida, desarrollos SaaS e integración de sistemas. Más de 12 años de experiencia, ROI en 30-90 días.',
   keywords: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     'ahorro costos operativos',
   ],
   openGraph: {
-    title: 'BUINTEL | Agencia de IA y Automatización · Monterrey, México',
+    title: 'Buintel | Agencia de IA y Automatización · Monterrey, México',
     description:
       'Agentes de IA, automatizaciones inteligentes y desarrollos a medida para empresas que quieren escalar sin aumentar su equipo. 100+ proyectos entregados.',
     type: 'website',
