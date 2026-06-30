@@ -5,8 +5,8 @@ import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 export const metadata: Metadata = {
   metadataBase: new URL('https://buintel.com'),
   title: {
-    default: 'Buintel Automations — Automatizamos el futuro de tu operación',
-    template: '%s | Buintel Automations',
+    default: 'Buintel',
+    template: '%s | Buintel',
   },
   description:
     'Buintel Automations es una empresa especializada en automatización empresarial, inteligencia artificial y transformación digital. Automatizamos conciliaciones financieras, procesos operativos, reportes ejecutivos e integraciones empresariales.',
@@ -64,11 +64,9 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/buintel_favicon.png', type: 'image/png' },
     ],
-    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
+    apple: [{ url: '/buintel_favicon.png' }],
   },
   manifest: '/site.webmanifest',
   alternates: {
