@@ -84,6 +84,8 @@ const config: Config = {
         display: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
         body: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
         mono: ['var(--font-mono)', 'monospace'],
+        // Alternativa gratuita a ITC Bauhaus (manual de marca) — usada en menú y footer
+        brand: ['Comfortaa', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-brand': 'linear-gradient(135deg, #0066FF 0%, #00D9FF 50%, #00A8CC 100%)',

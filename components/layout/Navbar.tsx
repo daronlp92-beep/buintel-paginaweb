@@ -44,7 +44,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop links */}
-        <ul className="hidden md:flex items-center gap-1" role="list">
+        <ul className="hidden md:flex items-center gap-1 font-brand" role="list">
           {NAVIGATION.map((link) => (
             <li key={link.href}>
               <Link
@@ -82,7 +82,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden backdrop-blur-md bg-neutral-900/80 border-t border-neutral-800/50 px-4 py-4">
-          <ul className="flex flex-col gap-1" role="list">
+          <ul className="flex flex-col gap-1 font-brand" role="list">
             {NAVIGATION.map((link) => (
               <li key={link.href}>
                 <Link
